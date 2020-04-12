@@ -1,0 +1,162 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Nova Mono', monospace;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Pacifico', cursive;
+  font-size: 5rem;
+  color: #66BFBF;
+  line-height: 2;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Sriracha', cursive;
+  font-size: 2rem;
+  color: #66BFBF;
+  line-height: 2;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999E;
+}
+
+hr {
+  border: dotted #EAF6F6 10px;
+  border-bottom: none;
+  width: 4%;
+  margin: 60px auto;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+
+/*TOP container elements*/
+
+.top-container {
+  background-color: #EAF6F6;
+  padding-top: 100px;
+  position: relative;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 20%;
+  top: 50px;
+}
+
+.web {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 20%;
+  bottom: 300px;
+}
+
+
+/*MIDDLE container elements*/
+
+.middle-container {
+  margin: 100px 0 100px 0;
+}
+
+.hernandez-image {
+  width: 14rem;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 3%;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.skill-row-bottom {
+  width: 50%;
+  margin: 100px auto auto auto;
+  text-align: left;
+}
+
+.computer-image {
+  border-radius: 50%;
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+}
+
+.chillies-image {
+  width: 20%;
+  float: right;
+  margin-left: 30px;
+}
+
+.contact-message {
+  margin: 40px auto 60px;
+}
+
+.myButton {
+  background-color: #79bbff;
+  border-radius: 28px;
+  border: 1px solid #84bbf3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 9px 16px;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background-color: #378de5;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+
+/*BOTTOM container elements*/
+
+.bottom-container {
+  background-color: #79bac1;
+  padding: 50px 0;
+}
+
+.footer-link {
+  color: #11999e;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+
+.footer-link:hover {
+  color: #EAF6F6;
+}
+
+.copyright {
+  color: #EAF6F6;
+  margin: 20px auto 0 auto;
+  font-size: 15px;
+}
