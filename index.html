@@ -1,76 +1,194 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <title>Hernandez Silva</title>
-  <!-- referencia ao ficheiro CSS externo styles.css -->
-  <link href="css/styles.css" rel="stylesheet">
-  <!-- favicon utilizado -->
-  <link href="images/favicon.ico" rel="icon" type="image/x-icon">
-  <!-- font embedding: referencia externa a fontes utilizadas -->
-  <link href="https://fonts.googleapis.com/css?family=Nova+Mono|Pacifico|Sriracha|Lato&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Hernandez Silva</title>
 
-</head>
+      <!-- referencia ao ficheiro CSS externo styles.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
 
-<body>
+    <!-- favicon utilizado -->
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
 
-  <div class="top-container">
+    <!-- font embedding: referencia externa a fontes utilizadas -->
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono|Pacifico|Sriracha|Ubuntu|Lato&display=swap" rel="stylesheet">
 
-    <img class="top-cloud" src="images/cloud.png" alt="top-cloud">
-    <h1>I'm Hernandez.</h1>
-    <h2>A <span class="web">Web</span> Developer...</h2>
-    <img class="bottom-cloud" src="images/cloud.png" alt="bottom-cloud">
-    <img class="mountain" src="images/mountain.png" alt="mountain">
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/bec8a1d071.js" crossorigin="anonymous"></script>
 
-  </div>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
 
 
-  <div class="middle-container">
-
-    <div class="profile">
-      <img class="hernandez-image" src="images/hernandez_silva_small.png" alt="hernandez-image">
-      <h2>Hello.</h2>
-      <p class="intro">Making beautiful websites is my thing... whenever you need a boost on yours.. i'm here! XD</p>
+    <div class="navbar-container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand mb-0 h1">HS</a>
+        <!-- O botão toggler deve conter o id do div com a informação que sera colapsada de forma a que,
+            se for clicado, expanda o mesmo.-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- id do div a ser expandido ao clicar no toggler button -->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about_me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
-    <hr>
 
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="computer-image" src="images/computer.png" alt="computer-image">
-        <h3>Java & Web Developement</h3>
-        <p>Backend, Frontend and everything in between...
-          KEEP CALM! I'm a Full-Stack Web Dev!</p>
+    <div class="top-container">
+      <img class="top-cloud" src="images/cloud.png" alt="top-cloud">
+      <img class="bottom-cloud" src="images/cloud.png" alt="bottom-cloud">
+      <img class="mountain" src="images/mountain.png" alt="mountain">
+    </div>
+
+
+    <div class="middle-container">
+
+      <div id="about_me" class="profile">
+        <img class="hernandez-image" src="images/hernandez_silva_small.png" alt="hernandez-image">
+        <h2>Hello.</h2>
+        <p class="intro">My name is Hernandez Silva, I've a degree in Computer Science and I'm giving the first steps in becoming a great web developer. Here you can find about my skills and some small projects I've been working on. Feel free to take a look around!</p>
       </div>
-      <div class="skill-row-bottom">
-        <img class="chillies-image" src="images/chillies.png" alt="chillies-image">
-        <h3>Spicy food lover</h3>
-        <p>Specialist in eating spicy food here! Jalapeños, Habaneros,
-          Tabascos... you name it... I can handle it all!</p>
+
+      <hr>
+
+
+      <div id="skills" class="skills-container">
+        <h2>My Skills</h2>
+        <div class="skill-row">
+          <img src="images/coding.svg" alt="coding-vector">
+          <h3>Java, Python & Javascript</h3>
+          <p>The programming languages I had most experience in college/personal projects.</p>
+        </div>
+        <div class="skill-row">
+          <img src="images/agile_scrum.svg" alt="agile-scrum-vector">
+          <h3>Agile/SCRUM</h3>
+          <p>SW Development methodology/framework I'm most familiar with.</p>
+        </div>
+        <p>For more about my skills, see my <a href="public/CV.pdf">complete CV</a></p>
       </div>
+
+      <hr>
+
+
+      <!-- Carousel of Projects -->
+
+      <div id="projects" class="projects-container coloured-section">
+        <h2>Web Projects</h2>
+        <div id="projects-carousel" class="carousel slide" data-ride="false">
+          <ol class="carousel-indicators">
+            <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#projects-carousel" data-slide-to="1"></li>
+            <li data-target="#projects-carousel" data-slide-to="2"></li>
+            <li data-target="#projects-carousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="webProjects/dicegame/index.html">
+                <img class="project-image" src="images/dice.svg" alt="dice-game">
+              </a>
+              <p class="project-text">Dice Game</p>
+            </div>
+            <div class="carousel-item">
+              <a href="webProjects/tindog/index.html">
+                <img class="project-image" src="images/paw.svg" alt="tindog">
+              </a>
+              <p class="project-text">Tindog</p>
+            </div>
+            <div class="carousel-item">
+              <a href="webProjects/drumkit/index.html">
+                <img class="project-image" src="images/drums.svg" alt="drum-kit">
+              </a>
+              <p class="project-text">Drum Kit</p>
+            </div>
+            <div class="carousel-item">
+              <a href="webProjects/simongame/index.html">
+                <img class="project-image" src="images/four-boxes.svg" alt="simon-game">
+              </a>
+              <p class="project-text">Simon Game</p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="projects-container coloured-section">
+        <h2>Desktop Projects</h2>
+        <div id="projects-carousel" class="carousel slide" data-ride="false">
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+          </ol> -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a>
+                <img class="project-image" src="images/under_construction.svg" alt="under-construction">
+              </a>
+              <p class="project-text">Under construction</p>
+            </div>
+          </div>
+          <!-- <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a> -->
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="contacts" class="contact-me">
+        <h2>Get In Touch</h2>
+        <p class="contact-message">I'm here to help! Feel free to contact me.</p>
+
+        <a class="contact-icon" href="https://www.facebook.com/cardosohs89/">
+          <i class="fab fa-facebook-f fa-2x"></i>
+        </a>
+
+        <a class="contact-icon" href="https://www.linkedin.com/in/hernandez-silva-8b4207168/">
+          <i class="fab fa-linkedin-in fa-2x"></i>
+        </a>
+
+        <a class="contact-icon" href="mailto:cardoso.hs.89@gmail.com">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+      </div>
+
     </div>
 
-    <hr>
-
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>In case you need... I'm here to help!</h3>
-      <p class="contact-message">Feel free to contact me</p>
-      <a class="myButton" href="mailto:cardoso.hs.89@gmail.com">CONTACT ME</a>
+    <div class="bottom-container">
+      <p class="copyright">cardosohs</p>
     </div>
 
-  </div>
-
-  <div class="bottom-container">
-
-    <a class="footer-link" href="https://www.linkedin.com/in/hernandez-silva-8b4207168/">LinkedIn</a>
-    <p class="copyright">© 2020 Hernandez Silva.</p>
-
-  </div>
-
-</body>
-
+  </body>
 </html>
