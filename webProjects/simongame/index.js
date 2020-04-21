@@ -12,7 +12,7 @@ var gameStarted = false;
 var gameIsOver = false;
 
 /*Todo cria um listener para a página triggered assim que um tecla é premida*/
-$(document).on("keypress", function() {
+$(document).on("click", function() {
   //se o jogo não comecou E se o jogo nao acabou, chamar o proximo nivel e começar o jogo
   if (!gameStarted && !gameIsOver) {
     nextSequence();
@@ -100,7 +100,7 @@ function gameOver() {
     $("body").removeClass("game-over");
   }, 200);
   //
-  $("#level-title").text("Game Over 😥, Press Any Key to Restart");
+  $("#level-title").text("Game Over 😥, Tap anywhere to Restart");
   //acabar o jogo
   gameIsOver = true;
 }
@@ -112,5 +112,5 @@ function restartValues() {
   gameStarted = false;
   gameIsOver = false;
   level = 0;
-  $("#level-title").text("Press A Key to Start");
+  $("#level-title").text("Tap anywhere to Start");
 }
