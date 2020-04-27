@@ -5,7 +5,7 @@ var userClickedPattern = [];
 //as 4 cores possiveis
 var buttonColours = ["red", "blue", "green", "yellow"];
 //textos de congrat possiveis
-var congratText = ["Good", "Nice!", "Great!", "Awesome!", "You're killing it!", "We've a champ here!", "I know you were the CHOSEN ONE!"];
+var congratText = ["Good", "Nice!", "Great!", "Awesome!", "You're killing it!", "We've a champ here!", "I knew you were the CHOSEN ONE!"];
 //variaveis de estado do jogo
 var level = 0;
 var gameStarted = false;
