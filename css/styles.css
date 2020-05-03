@@ -70,38 +70,19 @@ p {
 }
 
 
-.top-container {
-  background-color: #EAF6F6;
-  padding-top: 100px;
+.top-image {
   position: relative;
-}
+  width: 100%
 
-.top-cloud {
-  position: absolute;
-  right: 20%;
-  top: 50px;
-}
-
-.web {
-  text-decoration: underline;
-}
-
-.intro {
-  width: 40%;
-  margin: auto;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 20%;
-  bottom: 300px;
 }
 
 
 /*MIDDLE container elements*/
 
 .middle-container {
-  margin: 100px 0 100px 0;
+  margin: -150px 0 100px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .hernandez-image {
@@ -109,6 +90,11 @@ p {
   height: auto;
   border-radius: 50%;
   margin-bottom: 5%;
+}
+
+.intro {
+  width: 40%;
+  margin: auto;
 }
 
 
