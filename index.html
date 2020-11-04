@@ -93,46 +93,82 @@
 
       <div id="web-projects" class="projects-container coloured-section">
         <h2>Web Projects</h2>
-        <div id="web-projects-carousel" class="carousel slide" data-ride="false">
+        <div id="web-projects-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#web-projects-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#web-projects-carousel" data-slide-to="1"></li>
             <li data-target="#web-projects-carousel" data-slide-to="2"></li>
             <li data-target="#web-projects-carousel" data-slide-to="3"></li>
-            <li data-target="#web-projects-carousel" data-slide-to="4"></li>
-            <li data-target="#web-projects-carousel" data-slide-to="5"></li>
           </ol>
-          <div class="carousel-inner">
+
+          <!-- Slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <!-- First Slide -->
             <div class="carousel-item active">
-              <a href="https://keeper-app-cardosohs.herokuapp.com/">
-                <img class="project-screenshot" src="images/screenshots/keeperapp_scrsht.png" alt="keeper-app">
-              </a>
-                <p class="project-text">Keeper App</p>
+
+              <div class="row">
+
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <a href="https://keeper-app-cardosohs.herokuapp.com/">
+                      <img class="project-screenshot card-img-top" src="images/screenshots/keeperapp_scrsht.png" alt="keeper-app">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Keeper App</h4>
+                          <p class="project-text card-text">Google Keep alike notetaking web app</p>
+                        <a class="btn btn-primary">Source</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <a href="https://todolist-cardosohs.herokuapp.com/">
+                      <img class="project-screenshot card-img-top" src="images/screenshots/todolist_scrsht.png" alt="todolist">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">ToDo List</h4>
+                          <p class="project-text card-text">Create one or more todo lists</p>
+                        <a class="btn btn-primary">Source</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <a href="webProjects/tindog/index.html">
+                      <img class="project-screenshot card-img-top" src="images/screenshots/tindog_scrsht.png" alt="tindog">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Tindog</h4>
+                          <p class="project-text card-text">Like Tinder, but for dogs :)</p>
+                        <a class="btn btn-primary">Source</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <a href="https://todolist-cardosohs.herokuapp.com/">
-                <img class="project-screenshot" src="images/screenshots/todolist_scrsht.png" alt="todolist">
-              </a>
-              <p class="project-text">ToDo List</p>
-            </div>
-            <div class="carousel-item">
-              <a href="webProjects/tindog/index.html">
-                <img class="project-screenshot" src="images/screenshots/tindog_scrsht.png" alt="tindog">
-              </a>
-              <p class="project-text">Tindog</p>
-            </div>
+
+
+            <!-- Second Slide -->
             <div class="carousel-item">
               <a href="webProjects/dicegame/index.html">
                 <img class="project-screenshot" src="images/screenshots/dice_scrsht.png" alt="dicegame">
               </a>
               <p class="project-text">Dice Game</p>
             </div>
+
+            <!-- Third Slide -->
             <div class="carousel-item">
               <a href="webProjects/drumkit/index.html">
                 <img class="project-screenshot" src="images/screenshots/drumkit_scrsht.png" alt="drumkit">
               </a>
               <p class="project-text">Drum Kit</p>
             </div>
+
+            <!-- Fourth Slide -->
             <div class="carousel-item">
               <a href="webProjects/simongame/index.html">
                 <img class="project-screenshot" src="images/screenshots/simongame_scrsht.png" alt="simongame">
@@ -140,6 +176,7 @@
               <p class="project-text">Simon Game</p>
             </div>
           </div>
+
           <a class="carousel-control-prev" href="#web-projects-carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </a>
